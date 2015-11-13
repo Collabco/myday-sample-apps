@@ -1,0 +1,40 @@
+<div class="flex-container flex-container-columns" ng-init="myday.appFlex = true">
+
+  <!-- Fixed header -->
+  <div class="flex-header wrapper bg-light b-b">
+    <h1 class="font-thin h3" translate="app.collabco-todo.TITLE"></h1>
+  </div>
+
+  <!-- Scrollable content area -->
+  <div class="flex-xs-1 overflow-auto wrapper-md">
+
+    <!-- Add new form -->
+    <form ng-submit="vm.add(vm.newTodo)">
+      <input class="form-control input-lg" autofocus ng-model="vm.newTodo" placeholder="{{ 'app.collabco-todo.TYPE_SOMETHING' | translate }}">
+    </form>
+
+    <!-- ToDo list -->
+    <ul class="list-group list-group-lg m-t-md m-b-none" ng-if="vm.todos.length">
+      <li class="list-group-item flex-container" ng-repeat="todo in vm.todos track by $index">
+
+        <!-- Checkbox -->
+        <input type="checkbox" ng-model="todo.complete" ng-change="vm.save()" ng-show="!todo.editing">
+
+        <!-- ToDo (display) -->
+        <span class="flex-xs-1 padder" ng-dblclick="vm.toggleEdit(todo, true)" ng-show="!todo.editing">{{ todo.title }}</span>
+
+        <!-- ToDo (edit form) -->
+        <form class="flex-xs-1" ng-submit="vm.toggleEdit(todo, false)" ng-show="todo.editing">
+          <input class="form-control" autofocus ng-model="todo.title" ng-blur="vm.toggleEdit(todo, false)">
+        </form>
+
+        <!-- Remove -->
+        <button class="btn btn-xs btn-default" ng-click="vm.delete($index)" ng-show="!todo.editing">
+          <i class="fa fa-fw fa-trash-o"></i>
+        </button>
+
+      </li>
+    </ul>
+
+  </div>
+</div>

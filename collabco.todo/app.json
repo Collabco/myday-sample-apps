@@ -1,0 +1,24 @@
+{
+  "id": "collabco.todo",
+  "name": "ToDo",
+  "altNames": {
+    "cy": "ToDo",
+    "pl": "ToDo"
+  },
+  "description": "An example application for the myday App Architecture.",
+  "version": "1.0.1",
+  "tile": {
+    "title": "ToDo",
+    "altTitles": {
+      "cy": "ToDo",
+      "pl": "ToDo"
+    },
+    "sizes": [0, 1, 2],
+    "size": 2,
+    "template": "multiline",
+    "templates": ["info", "multiline"],
+    "backgroundColor": [1, 138, 20, 255],
+    "foregroundColor": [255, 255, 255, 255],
+    "icon": "fa fa-list-alt"
+  }
+}

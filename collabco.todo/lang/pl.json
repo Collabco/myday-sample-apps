@@ -1,0 +1,11 @@
+{
+  "app.collabco-todo": {
+    "tile": {
+      "TODO": "To-do",
+      "COMPLETE": "Zrobione",
+      "INCOMPLETE": "Niezrobione"
+    },
+    "TITLE": "Zadania myday",
+    "TYPE_SOMETHING": "Wpisz zadanie i wciśnij Enter"
+  }
+}
