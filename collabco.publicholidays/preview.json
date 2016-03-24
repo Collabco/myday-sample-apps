@@ -1,0 +1,27 @@
+[{
+  "name": "info",
+  "content": [{
+    "title": "app.collabco-publicholidays.TILE_YEAR",
+    "value": 81
+  }, {
+    "title": "app.collabco-publicholidays.TILE_ONTIME",
+    "value": 89
+  }]
+}, {
+  "name": "multiline",
+  "content": [{
+    "title": "81%",
+    "subtitle": "app.collabco-publicholidays.TILE_YEAR",
+    "translationMap": {
+      "title": false,
+      "subtitle": true
+    }
+  }, {
+    "title": "89%",
+    "subtitle": "app.collabco-publicholidays.TILE_ONTIME",
+    "translationMap": {
+      "title": false,
+      "subtitle": true
+    }
+  }]
+}]

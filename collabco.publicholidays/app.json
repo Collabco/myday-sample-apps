@@ -1,0 +1,29 @@
+{
+  "id": "collabco.publicholidays",
+  "name": "Holidays app",
+  "altNames":{
+    "cy":"Holidays App",
+    "en-us":"Holidays App",
+    "gd-gb":"Holidays App",
+    "pl":"Holidays App",
+    },
+  "description": "An example application for the myday App Architecture.",
+  "version": "1.0.0",
+  "tile": {
+    "title": "Public Holidays",
+    "altTitles": {
+      "cy": "Public Holidays",
+      "pl": "Public Holidays",
+      "en-us": "Public Holidays",
+      "gd-gb":"Public Holidays",
+    },
+    "sizes":[0,1,2,3],
+    "size": 2,
+    "templates" : ["info", "multiline"],
+    "template" : "multiline",
+    "backgroundColor": [110, 240, 180, 255],
+    "foregroundColor": [255, 255, 255, 255],
+    "icon": "fa fa-smile-o"
+  }
+}
+

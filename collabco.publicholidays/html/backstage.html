@@ -1,0 +1,9 @@
+        <h1>Public Holidays for the current year</h1>
+        <h4>{{subtitle}}</h4>
+        <h5>{{upcoming}}</h5>
+        <div ng-repeat="(date, arr) in holidays">
+            <div class="panel" ng-repeat="item in arr">
+                <div>Date:{{item.date}}</div>
+                <div>Name:{{item.name}}</div>
+            </div>
+        </div>

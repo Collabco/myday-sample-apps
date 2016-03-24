@@ -1,0 +1,9 @@
+/* prefix is necessary for all selectors, so these styles are only applied within backstage app canvas, otherwise an app developer would break entire site */
+
+.app-collabco-publicHolidays div {
+  color: red;
+}
+
+.app-collabco-publicHolidays .something {
+  color: green;
+}
