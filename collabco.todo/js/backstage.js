@@ -3,7 +3,7 @@
 
   angular
     .module('app.collabco.todo', [])
-    .config(['$stateProvider', config]);
+    .config(config);
 
 
 

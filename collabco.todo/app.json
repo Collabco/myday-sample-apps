@@ -3,14 +3,18 @@
   "name": "ToDo",
   "altNames": {
     "cy": "ToDo",
+    "en-us": "ToDo",
+    "gd-gb": "ToDo",
     "pl": "ToDo"
   },
-  "description": "An example application for the myday App Architecture.",
-  "version": "1.0.1",
+  "description": "An example myday app.",
+  "version": "1.0.3",
   "tile": {
     "title": "ToDo",
     "altTitles": {
       "cy": "ToDo",
+      "en-us": "ToDo",
+      "gd-gb": "ToDo",
       "pl": "ToDo"
     },
     "sizes": [0, 1, 2],
