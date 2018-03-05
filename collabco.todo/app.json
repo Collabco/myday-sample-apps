@@ -8,7 +8,7 @@
     "pl": "ToDo"
   },
   "description": "An example myday app.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "tile": {
     "title": "ToDo",
     "altTitles": {

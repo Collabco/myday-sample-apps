@@ -6,8 +6,7 @@
     .controller('tile.collabco.todo', TileCtrl)
     .dependencies = ['CollabcoToDoService'];
 
-
-
+  TileCtrl.$inject = ['$scope','MydaySidebar','CollabcoToDoService'];
   function TileCtrl ($scope, MydaySidebar, CollabcoToDoService) {
 
     // The tile object representing this tile is accessed at $scope.tile
@@ -82,5 +81,6 @@
     }
 
   }
+ 
 
 })();

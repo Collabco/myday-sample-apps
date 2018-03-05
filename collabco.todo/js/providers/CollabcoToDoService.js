@@ -5,8 +5,6 @@
     .module('providers.collabco.todo')
     .service('CollabcoToDoService', CollabcoToDoService);
 
-
-
   function CollabcoToDoService () {
 
     var STORAGE_ID = 'collabco.todo';

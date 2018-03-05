@@ -4,12 +4,10 @@
   angular
     .module('app.collabco.todo')
     .controller('CollabcoToDoCtrl', CollabcoToDoCtrl);
-
-
+    CollabcoToDoCtrl.$inject = ['$scope','CollabcoToDoService'];
 
   function CollabcoToDoCtrl ($scope, CollabcoToDoService) {
     var vm = this;
-
     // Retrieve the list of saved todo items (defaults to empty array)
     vm.todos = CollabcoToDoService.get();
 
@@ -55,5 +53,7 @@
       CollabcoToDoService.save(vm.todos);
     };
   }
+
+
 
 })();
