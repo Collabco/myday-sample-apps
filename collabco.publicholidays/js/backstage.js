@@ -9,7 +9,7 @@
     .module('app.collabco.publicholidays', [])
     .config(config);
 
-  config.$inject = ['$stateprovider'];
+  config.$inject = ['$stateProvider'];
   function config($stateProvider) {
 
     // Configure in-app states

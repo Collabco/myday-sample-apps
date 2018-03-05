@@ -1,6 +1,6 @@
 /**
  * Public Holidays 
- * Collabco, 2016
+ * Collabco, 2018
  */
 
 (function () {
@@ -11,8 +11,8 @@
     .controller('tile.collabco.publicholidays', TileCtrl)
     .dependencies = ['HolidaysApi'];
 
-  TileCtrl.$inject = ['$scope', 'HolidaysApi','_'];
-  function TileCtrl ($scope,HolidaysApi,_) {
+  TileCtrl.$inject = ['$scope', 'HolidaysApi'];
+  function TileCtrl ($scope,HolidaysApi) {
 
     var tile = $scope.tile;
 
@@ -33,8 +33,8 @@
 
           if (tile.size === 2) {
             tileContent = [{
-              title:    'Next Holiday: ' + _.values(holidays)[0][0].name,
-              subtitle: _.values(holidays)[0][0].date
+              title:    'Next Holiday: ' + holidays[0].name,
+              subtitle: holidays[0].date
             }];
           }    
         // Large
