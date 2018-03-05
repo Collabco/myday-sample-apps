@@ -1,3 +1,8 @@
 {
-  "app.collabco-publicHolidays": {}
+  "app.collabco-publicHolidays": {
+  	"settings":{
+  		"ENDPOINT_NAME":"Proxy Connector Logical Name",
+  		"KEY":"Key"
+  	}
+  }
 }

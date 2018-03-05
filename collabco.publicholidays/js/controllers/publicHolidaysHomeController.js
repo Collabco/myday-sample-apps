@@ -5,6 +5,7 @@
     .module('app.collabco.publicholidays')    
     .controller('publicHolidaysHomeController', publicHolidaysHomeController);
 
+    publicHolidaysHomeController.$inject = ['$scope','HolidaysApi'];
     function publicHolidaysHomeController($scope, HolidaysApi) {
         var vm = this;
         $scope.title = "This is a TEST App!!";

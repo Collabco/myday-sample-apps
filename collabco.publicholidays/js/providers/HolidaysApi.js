@@ -5,8 +5,18 @@
 angular.module('providers.publicholidays',[])
     .factory('HolidaysApi', HolidaysApi);
 
-function HolidaysApi($http,$q) {
+HolidaysApi.$inject = ['$http','$q', 'Apps'];
+function HolidaysApi($http,$q, Apps) {
     
+    // set up endpoint name default before trying to access from settings
+    var _endPoint = "holidays";
+    var _settings = Apps.getAppSettings('collabco.publicholidays');
+    if(_settings){
+        if(_settings.endpointName){
+            _endPoint = _settings.endpointName;
+        }
+    } 
+
     var today = new Date();
     var year = today.getFullYear();
     var month = today.getMonth() +1;
@@ -14,7 +24,7 @@ function HolidaysApi($http,$q) {
         return {
             getHolidays: function () {
                 var deferred = $q.defer();
-                return $http.get('https://dev.mydaycloud.com/api/endpoint/holidays?country=GB&year='+year)
+                return $http.get('/api/endpoint/' + _endPoint + '?country=GB&year='+year)
                 .then(function (response) {
                     deferred.resolve(response.data);
                     return deferred.promise;
@@ -23,7 +33,7 @@ function HolidaysApi($http,$q) {
             },
             getUpcoming: function () {
                 var deferred = $q.defer();
-                var resource = 'https://dev.mydaycloud.com/api/endpoint/holidays?country=GB&year=' + year 
+                var resource = '/api/endpoint/' + _endPoint + '?country=GB&year=' + year 
                 +'&month=' +month 
                 +"&day="+ day
                 +'&upcoming';

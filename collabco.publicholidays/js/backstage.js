@@ -1,6 +1,6 @@
 /**
- * Hello World Backstage
- * Collabco, 2014
+ * Public Holidays Backstage
+ * Collabco, 2018
  */
 (function () {
   'use strict';
@@ -9,6 +9,7 @@
     .module('app.collabco.publicholidays', [])
     .config(config);
 
+  config.$inject = ['$stateprovider'];
   function config($stateProvider) {
 
     // Configure in-app states

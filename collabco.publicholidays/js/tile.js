@@ -11,16 +11,14 @@
     .controller('tile.collabco.publicholidays', TileCtrl)
     .dependencies = ['HolidaysApi'];
 
-
-  function TileCtrl ($scope,HolidaysApi) {
+  TileCtrl.$inject = ['$scope', 'HolidaysApi','_'];
+  function TileCtrl ($scope,HolidaysApi,_) {
 
     var tile = $scope.tile;
-    var tileContent  = [];
-    
 
     // Medium
     if (tile.template === 'info') {
-      tileContent = [{
+      var tileContent = [{
         title:    'Public Holidays',
         subtitle: '---'
       }];
@@ -31,11 +29,12 @@
       HolidaysApi.getUpcoming()
       .then(function (result) {
           var holidays = result.holidays;          
-          
+          var tileContent = [];
+
           if (tile.size === 2) {
             tileContent = [{
-              title:    'Next Holiday: ' + holidays[0].name,
-              subtitle: holidays[0].date
+              title:    'Next Holiday: ' + _.values(holidays)[0][0].name,
+              subtitle: _.values(holidays)[0][0].date
             }];
           }    
         // Large
@@ -52,6 +51,8 @@
           
           tile.content = tileContent;
           tile.ready();
+      },function(error){
+          console.log(error);
       });
     }
 
