@@ -6,7 +6,7 @@
     .factory('CollabcoInstagramPhotosService', CollabcoInstagramPhotosService);
 
 
-
+	CollabcoInstagramPhotosService.$inject = ['$http', '$q', 'MydayOAuthService'];
 	function CollabcoInstagramPhotosService ($http, $q, MydayOAuthService) {
 
 		// Initialise the OAuth service

@@ -4,9 +4,8 @@
   angular
     .module('app.collabco.instagramphotos')
     .controller('CollabcoInstagramPhotosCtrl', CollabcoInstagramPhotosCtrl)
-    .dependencies = ['CollabcoInstagramPhotosService']
 
-
+  CollabcoInstagramPhotosCtrl.$inject = ['$scope','CollabcoInstagramPhotosService'];
   function CollabcoInstagramPhotosCtrl ($scope,CollabcoInstagramPhotosService) {
     var vm = this;
     vm.view = CollabcoInstagramPhotosService.helloWorld();

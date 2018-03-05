@@ -7,7 +7,7 @@
     .dependencies = ['CollabcoInstagramPhotosService']
 
 
-
+  TileCtrl.$inject = ['$scope', '$q', 'MydaySidebar','CollabcoInstagramPhotosService'];
   function TileCtrl ($scope, $q, MydaySidebar,CollabcoInstagramPhotosService) {
 
     // The tile object representing this tile is accessed at $scope.tile

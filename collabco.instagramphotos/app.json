@@ -8,7 +8,7 @@
     "en-us": "Test Instagram Photos Access"    
   },
   "description": "A sample application that uses OAuth2 to access a service",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "tile": {
     "title": "Test Instagram Photos Access",
     "altTitles": {
