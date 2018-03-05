@@ -1,0 +1,26 @@
+<div class="flex-container flex-container-columns" ng-init="myday.appFlex = true">
+
+  <!-- Fixed header -->
+  <div class="flex-header wrapper bg-light b-b">
+    <h1 class="font-thin h3" translate="app.collabco-instagramphotos.RECENT"></h1>
+    <span class="inst-account">{{vm.account.full_name}}</span> 
+    <span>
+    	<img ng-src="{{vm.account.profile_picture}}" class="inst-account-avatar" />
+    </span>
+  </div>
+
+  <!-- Scrollable content area -->
+  <div class="flex-xs-1 overflow-auto wrapper-md" >
+  <div gridster> 
+    <ul class="inst-item">
+    	<li gridster-item="photo" ng-repeat="photo in vm.photos">
+    		<div class="inst-placeholder" >
+    			<div ng-if='photo.caption.text' class="inst-caption">{{photo.caption.text}}</div>
+    			<div ng-if='!photo.caption.text' class="inst-caption inst-caption-empty"></div>
+    			<img class="inst-image" ng-src="{{photo.images.low_resolution.url}}" width='200px' height='200px' />
+    			<div class="inst-meta"><i class="fa fa-heart-o" aria-hidden="true"></i> {{photo.likes.count}}</div>
+    		</div>
+    	</li>
+    <ul/>
+  </div>
+</div>

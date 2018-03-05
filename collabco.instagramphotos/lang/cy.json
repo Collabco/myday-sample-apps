@@ -1,0 +1,13 @@
+{
+  "app.collabco-instagramphotos": {
+    "tile": {
+      	"POSTS": "Posts",
+      	"FOLLOWERS": "Followers",
+      	"FOLLOWING": "Following",
+        "UNATHORISED": "Unauthorised",
+    	"CLICK_TO_GRANT_ACCESS" : "Click this tile to grant access"
+    },
+    "TITLE": "myday Instagram Photo App",
+    "RECENT": "My recent Photos"
+  }
+}

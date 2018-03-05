@@ -1,0 +1,28 @@
+{
+  "id": "collabco.helloworld2",
+  "name": "Hello World 2",
+  "altNames": {
+    "cy": "Hello World 2",
+    "pl": "Hello World 2",
+    "gd-gb": "Hello World 2",
+    "en-us": "Hello World 2"    
+  },
+  "description": "App that demonstrates how to use a resource secured against myday identity service",
+  "version": "1.0.0",
+  "tile": {
+    "title": "Hello World 2",
+    "altTitles": {
+      "cy": "Hello World 2",
+      "pl": "Hello World 2",
+      "gd-gb": "Hello World 2",
+      "en-us": "Hello World 2"
+    },
+    "sizes": [0, 1, 2,3,4,5],
+    "size": 2,
+    "template": "info",
+    "templates": ["info", "multiline"],
+    "backgroundColor": [1, 138, 20, 255],
+    "foregroundColor": [255, 255, 255, 255],
+    "icon": "fa fa-globe"
+  }
+}

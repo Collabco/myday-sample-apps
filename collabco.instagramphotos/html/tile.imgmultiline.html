@@ -1,0 +1,6 @@
+<div class="item" tabindex="-1" style="overflow:hidden">
+  <img ng-if="tile.content[0].image" ng-src="{{tile.content[0].image}}" width="112" height="112" style="border-radius:50%;float:left;margin-left:-1em" />
+  <div style="float:left;"><h5>{{ tile.content[0].translationMap.title ? (tile.content[0].title | translate) : tile.content[0].title }}</h5>
+  <p ng-if="tile.content[0].subtitle" ng-bind-html="tile.content[0].translationMap.subtitle ? (tile.content[0].subtitle | translate:translationData) : tile.content[0].subtitle | characters:100"></p></div>
+</div>
+

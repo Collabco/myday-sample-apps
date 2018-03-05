@@ -1,0 +1,18 @@
+<div class="flex-container flex-container-columns" ng-init="myday.appFlex = true">
+
+  <!-- Fixed header -->
+  <div class="flex-header wrapper bg-light b-b">
+    <h1 class="font-thin h3" translate="app.collabco-helloworld2.TITLE"></h1>
+  </div>
+
+  <!-- Scrollable content area -->
+  <div class="flex-xs-1 overflow-auto wrapper-md" >
+    <p>String 1 = {{vm.str1}}</p>
+    <p>String 2 = {{vm.str2}}</p>
+    <table class="table table-responsive">
+    <tr ng-repeat="claim in vm.claims">
+    	<td>{{claim}}</td>
+    </tr>
+    </table>
+  </div>
+</div>

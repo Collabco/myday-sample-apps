@@ -1,0 +1,33 @@
+{
+  "id": "collabco.instagramphotos",
+  "name": "Test Instagram Photos Access",
+  "altNames": {
+    "cy": "Test Instagram Photos Access",
+    "pl": "Test Instagram Photos Access",
+    "gd-gb": "Test Instagram Photos Access",
+    "en-us": "Test Instagram Photos Access"    
+  },
+  "description": "A sample application that uses OAuth2 to access a service",
+  "version": "1.0.6",
+  "tile": {
+    "title": "Test Instagram Photos Access",
+    "altTitles": {
+      "cy": "Test Instagram Photos Access",
+      "pl": "Test Instagram Photos Access",
+      "gd-gb": "Test Instagram Photos Access",
+      "en-us": "Test Instagram Photos Access"
+    },
+    "sizes": [0, 1, 2,3,4,5],
+    "size": 1,
+    "template": "imgmultiline",
+    "templates": ["info", "multiline", "imgmultiline"],
+    "customTemplates": [{
+      "id":"imgmultiline",
+      "name":"imgmultiline",
+      "sizes":[2]
+    }],
+    "backgroundColor": [1, 138, 20, 255],
+    "foregroundColor": [255, 255, 255, 255],
+    "icon": "fa fa-first-order"
+  }
+}

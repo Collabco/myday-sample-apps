@@ -1,0 +1,11 @@
+{
+  "app.collabco-helloworld2": {
+    "tile": {
+      "TITLE1": "Title 1",
+      "TITLE2": "Title 2",
+      "TITLE3": "Title 3"
+    },
+    "TITLE": "myday App Template",
+    "SECOND_LABEL": "App Template"
+  }
+}

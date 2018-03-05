@@ -1,0 +1,46 @@
+.inst-item {
+	list-style-type: none;
+}
+
+.inst-photo {
+	max-width: 220px;
+	display: inline;
+}
+
+.inst-placeholder{
+	padding: 5px 5px 5px 5px;
+	background-color: white;
+	margin-bottom:9px;
+	max-width: 210px!important;
+	min-width: 210px;
+}
+
+.inst-caption{
+	padding: 3px;
+	font-weight: bold;
+	min-height: 3em;
+	max-height: 3em;
+	text-overflow: ellipsis	;
+}
+
+.inst-caption-empty{
+	background-image:url("../images/quotes.gif");
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	-khtml-opacity:.30; 
+	-moz-opacity:.30; 
+	-ms-filter:"alpha(opacity=30)";
+	filter:alpha(opacity=30);
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.3);
+	opacity:.30; 
+}
+
+.inst-account-avatar{
+	min-height: 50px;
+	min-width: 50px;
+	max-height: 50px;
+	max-width: 50px;
+	border-radius: 50%;
+	padding: 3px;
+}
